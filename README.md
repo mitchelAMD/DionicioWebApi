@@ -27,31 +27,31 @@ Mediator Pattern: Utilizado para la gestión de comandos y consultas de manera d
 Inyección de Dependencias: Utilizado para proporcionar una forma flexible y desacoplada de gestionar las dependencias entre los componentes de la aplicación.
 
 
-Levantar el Proyecto Localmente Primera forma
+A. Levantar el Proyecto Localmente Primera forma
 
 1. Tener instalado .NET Core 7.0 y un entorno de desarrollo compatible.
 
 2. Clone el repositorio en su máquina local.
 
-git clone [URL_DEL_REPOSITORIO]
+	git clone [URL_DEL_REPOSITORIO]
 
 3. abrir un terminal y navegue al directorio raíz del proyecto: 
 
-cd [DIRECTORIO_DEL_PROYECTO]
+	cd [DIRECTORIO_DEL_PROYECTO]
 
 4. Restaurar las dependencias del proyecto: 
 
-dotnet restore
+	dotnet restore
 
 5. Compile el proyecto
 
-dotnet build
+	dotnet build
 
 6. Configure el entorno de ejecución
 
-dotnet run --project PruebaUPC.WebApi
+	dotnet run --project PruebaUPC.WebApi
 
-Levantar el Proyecto Localmente Segunda Forma
+B. Levantar el Proyecto Localmente Segunda Forma
 
 Dar click en Code/Download ZIP.
 El archivo se va a descargar en la carpeta de Descargas "C:\Users\WIN\Downloads\DionicioWebApi-main\DionicioWebApi-main" y dentro de esta ubicacion estara el archivo "DionicioWebAPI.zip" el cual debe ser descomprimido.
@@ -65,4 +65,3 @@ Pruebas Unitarias: Se han incluido pruebas unitarias en el proyecto PruebaUPC.Te
 Logging: La aplicación utiliza un sistema de registro (logging) que almacena los registros en archivos, ubicados en el directorio de la aplicación.
 Caché: Se ha implementado un ejemplo de caché utilizando la biblioteca MemoryCache para almacenar temporalmente los estados de la aplicación en el controlador StatusController.
 la ruta del archivo LOGS se encuentra en PruebaUPC.WebApi\bin\Debug\net7.0\Logs
-
