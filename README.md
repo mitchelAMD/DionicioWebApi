@@ -25,3 +25,44 @@ Patrones y Tecnologías Utilizadas
 CQRS (Command Query Responsibility Segregation): Divide las operaciones de lectura y escritura en comandos y consultas, permitiendo una escalabilidad y mantenimiento más sencillos.
 Mediator Pattern: Utilizado para la gestión de comandos y consultas de manera desacoplada.
 Inyección de Dependencias: Utilizado para proporcionar una forma flexible y desacoplada de gestionar las dependencias entre los componentes de la aplicación.
+
+
+Levantar el Proyecto Localmente Primera forma
+
+1. Tener instalado .NET Core 7.0 y un entorno de desarrollo compatible.
+
+2. Clone el repositorio en su máquina local.
+
+git clone [URL_DEL_REPOSITORIO]
+
+3. abrir un terminal y navegue al directorio raíz del proyecto: 
+
+cd [DIRECTORIO_DEL_PROYECTO]
+
+4. Restaurar las dependencias del proyecto: 
+
+dotnet restore
+
+5. Compile el proyecto
+
+dotnet build
+
+6. Configure el entorno de ejecución
+
+dotnet run --project PruebaUPC.WebApi
+
+Levantar el Proyecto Localmente Segunda Forma
+
+Dar click en Code/Download ZIP.
+El archivo se va a descargar en la carpeta de Descargas "C:\Users\WIN\Downloads\DionicioWebApi-main\DionicioWebApi-main" y dentro de esta ubicacion estara el archivo "DionicioWebAPI.zip" el cual debe ser descomprimido.
+Luego de haber descromprimido el archivo ir a la ruta "C:\Users\WIN\Downloads\DionicioWebApi-main\DionicioWebApi-main\DionicioWebAPI\DionicioWebAPI" el cual se encuentra la solucion donde se encontrara los archivos
+de la solucion, se debe ejeutar el archivo "PruebaUPC.sln" en visual studio 2022.
+
+
+Información Adicional
+
+Pruebas Unitarias: Se han incluido pruebas unitarias en el proyecto PruebaUPC.Test utilizando el framework NUnit y la biblioteca Moq para realizar mock de dependencias.
+Logging: La aplicación utiliza un sistema de registro (logging) que almacena los registros en archivos, ubicados en el directorio de la aplicación.
+Caché: Se ha implementado un ejemplo de caché utilizando la biblioteca MemoryCache para almacenar temporalmente los estados de la aplicación en el controlador StatusController.
+la ruta del archivo LOGS se encuentra en PruebaUPC.WebApi\bin\Debug\net7.0\Logs
+
